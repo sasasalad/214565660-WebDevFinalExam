@@ -1,1 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
 
+/*navigation css*/
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #454545;
+    font-size: 1.2rem;
+}
+a:hover{
+    color:#5e17eb;
+}
+header{
+    position: relative;
+    padding: 0.2rem;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #5e17eb;
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+.navbar .links a{
+    font-size: 1.3rem;
+}
+/*---main css start*/
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+    background-image: url("hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cols{
+    width: 80%;
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #ffff;
+}
+h1{
+    display: block;
+    font-size: 3.3rem;
+    font-weight: 900;
+    color: #ffaa3c;
+}
+.sentence{
+    display: block;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: #ffff;
+}
+.btns{
+    width: 100%;
+    position: relative;
+}
+button{
+    outline: none;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 3.5px ;
+    border-color: #ffaa3c;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #ffff;
+    background-color: #5e17eb;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+}
+button:hover{
+   background-color: #ffaa3c;
+   border-style: solid;
+   border-radius: 15px;
+   border-width: 3.5px ;
+   border-color: #5e17eb;
+}
+.imgbox{
+    height: 80%;
+    margin-right: 40px;
+}
+.imgbox img{
+    position: relative;
+    width: 100%;
+    left: 100px;
+    bottom: 75px;
+    animation: animateUser 4s linear infinite;
+}
+@keyframes animateUser{
+    50%{
+        left: 130px;
+    }
+}
+
+/*start of footer*/
+.footer-content{
+    background: #E2DBD1;
+    height: 25vh;
+    font-family: 'Noto+Serif';
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.footer-content h3{
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 15px;
+    font-weight: 525;
+}
